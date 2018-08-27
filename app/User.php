@@ -3,9 +3,17 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Foundation\Auth\User as AuthUser;
 
-class User extends Authenticatable
+/**
+ * Class HomeController
+ *
+ * @category App
+ *
+ * @author   Lodewyk Duminy
+ * @since    25 August 2018
+ */
+class User extends AuthUser
 {
     use Notifiable;
 

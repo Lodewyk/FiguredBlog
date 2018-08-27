@@ -78,6 +78,16 @@ return [
             'prefix' => '',
         ],
 
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'host' => env('DB_HOST', 'localhost'),
+            'port' => env('DB_PORT', '27017'),
+            'port' => '27017',
+            'database' => env('FIGURED_DB_DATABASE', 'figured'),
+            'username' => env('FIGURED_DB_USERNAME'),
+            'password' => env('FIGURED_DB_PASSWORD'),
+        ]
+
     ],
 
     /*
